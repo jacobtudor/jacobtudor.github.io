@@ -53,7 +53,7 @@ provide<() => void>('toggleMenu', toggleMenu)
                 <div class="shadow"></div>
                 <a href="mailto:jacob_tudor@outlook.com" @click="$emit('toggle-menu'), toggleMenu()">Contact</a>
                 <div class="shadow"></div>
-                <span class="vl"></span>
+                <span class="vl"> </span>
             </nav>
         </div>
     </header>
