@@ -9,7 +9,7 @@ import NavComponent from './components/navcomponent.vue';
   <!-- <headercomponent/> -->
   <!-- <NavComponent/> -->
   <RouterView />
-  <footercomponent/>
+  <footercomponent/> 
 </template>
 
 <style lang="scss" scoped>
