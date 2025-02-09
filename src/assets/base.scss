@@ -1,0 +1,63 @@
+html { 
+  scroll-behavior: smooth;
+}
+html, body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+:root { 
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+/* Font-Size */
+$font-size-300: 0.8rem;
+$font-size-400: 1rem;
+$font-size-500: 1.125rem;
+$font-size-600: 1.5rem;
+$font-size-700: 2rem;
+$font-size-800: 3rem;
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  /* Font-Size */
+  :root { 
+    font-size: 10px;
+  }
+  
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  /* Font-Size */
+  :root { 
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+  }
+  
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  /* Font-Size */
+  :root { 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  /* Font-Size */
+  :root { 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  
+ } 
+
+/* Palette */
+$grey-light:#7B7B7B;
+$green: #7dca8a;
