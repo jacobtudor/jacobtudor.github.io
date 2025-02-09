@@ -141,7 +141,7 @@ $color2:greenyellow;
     display: flex;
     align-items: center;
     height: $lineheight;
-    padding: 0 $linespacing;
+    padding: 0 $linespacing; 
 }
 
 // Circles
