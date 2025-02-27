@@ -105,10 +105,10 @@ nav {
         color: grey;
         text-decoration: none;
     }
-    a:first-of-type { 
-        text-decoration: line-through;
-        opacity: 0.5;
-    }
+    // a:first-of-type { 
+    //     text-decoration: line-through;
+    //     opacity: 0.5;
+    // }
     a:hover { 
         color: rgba(0,128,0,1);
     }
