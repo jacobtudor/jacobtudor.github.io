@@ -6,9 +6,10 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production'
-  ? 'jacobtudor.github.io' // Set base path for production
-  : '/', // Set base path for development
+  // base: process.env.NODE_ENV === 'production'
+  // ? 'jacobtudor.github.io'
+  // : '/',
+  base: 'jacobtudor.github.io',
   plugins: [
     vue(),
     vueDevTools(),
