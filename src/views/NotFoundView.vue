@@ -15,7 +15,7 @@
 <template>
   <HeaderComponent @toggle-menu="toggleMenu"/>
   <main :class="{'mobile-menu-open': menu}">
-    <section>h1 404 Not Found</section>
+    <section><h1>404 Not Found</h1></section>
   </main>
 </template>
 
