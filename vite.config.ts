@@ -9,7 +9,7 @@ export default defineConfig({
   // base: process.env.NODE_ENV === 'production'
   // ? 'jacobtudor.github.io'
   // : '/',
-  base: 'jacobtudor.github.io',
+  base: '/jacobtudor.github.io',
   plugins: [
     vue(),
     vueDevTools(),
