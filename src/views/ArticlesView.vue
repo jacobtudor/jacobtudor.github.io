@@ -25,7 +25,7 @@
         <ul>
           <li class="article" v-for="article in articles" :key="article.linkhref">
             <div>
-              <RouterLink :to="{path: 'article/' + article.name}">{{article.name}}</RouterLink>
+              <article-link :to="{path: 'article/' + article.name}">{{article.name}}</article-link>
               <div>
                 <p>{{article.desc}}</p>
                 <small>{{ article.publicationdate }}</small>
