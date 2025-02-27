@@ -36,7 +36,7 @@ provide<() => void>('toggleMenu', toggleMenu)
         </div>
         <nav>
             <span class="vl"></span>
-            <a href="/#about-me">About me</a>
+            <a href="#about-me">About me</a>
             <div class="shadow"></div>
             <a href="mailto:jacob_tudor@outlook.com">Contact</a>
             <div class="shadow"></div>
