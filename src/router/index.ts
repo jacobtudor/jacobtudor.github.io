@@ -17,7 +17,12 @@ const router = createRouter({
       name: 'notfound',
       component: NotFound
     }
-    // {
+  ],
+})
+
+export default router
+
+// {
     //   path: '/articles',
     //   name: 'articles',
     //   // route level code-splitting
@@ -42,7 +47,3 @@ const router = createRouter({
     //   component: () => import('../views/ArticleView.vue'),
     //   props: true
     // },
-  ],
-})
-
-export default router
