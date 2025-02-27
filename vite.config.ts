@@ -6,7 +6,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/jacob-bioinformatics-development-website/',
+  base: process.env.NODE_ENV === 'production'
+  ? '/jacobtudorbioinformatics/' // Set base path for production
+  : '/', // Set base path for development
   plugins: [
     vue(),
     vueDevTools(),

@@ -23,10 +23,10 @@ provide<() => void>('toggleMenu', toggleMenu)
     <header :class="{'mobile-menu-open': (menu === true)}">
         <div>
             <span class="line"></span>
-            <div class="logo">      
+            <router-link to="/" class="logo">      
                 <DoubleHelix/>
                 <!-- <img src="../assets/svg/Sapling.svg" alt=""> -->
-            </div>
+            </router-link>
             <span class="line"></span>
             <div class="mobile-burger" @click="$emit('toggle-menu'), toggleMenu()">
                 <span></span>
@@ -36,9 +36,11 @@ provide<() => void>('toggleMenu', toggleMenu)
         </div>
         <nav>
             <span class="vl"></span>
-            <a href="projects">Projects</a>
+            <router-link to="/Articles">Articles</router-link>
             <div class="shadow"></div>
-            <a href="#about-me">About me</a>
+            <router-link to="/Projects">Projects</router-link>
+            <div class="shadow"></div>
+            <a href="/#about-me">About me</a>
             <div class="shadow"></div>
             <a href="mailto:jacob_tudor@outlook.com">Contact</a>
             <div class="shadow"></div>
@@ -47,8 +49,10 @@ provide<() => void>('toggleMenu', toggleMenu)
         <div class="mobile-menu" :class="{'mobile-menu-open': (menu === true)}">
             <nav>
                 <span class="vl"></span>
-                <a href="projects" @click="$emit('toggle-menu'), toggleMenu()">Projects</a>
+                <!-- <a href="Articles" @click="$emit('toggle-menu'), toggleMenu()">Articles</a>
                 <div class="shadow"></div>
+                <a href="projects" @click="$emit('toggle-menu'), toggleMenu()">Projects</a>
+                <div class="shadow"></div> -->
                 <a href="#about-me" @click="$emit('toggle-menu'), toggleMenu()">About me</a>
                 <div class="shadow"></div>
                 <a href="mailto:jacob_tudor@outlook.com" @click="$emit('toggle-menu'), toggleMenu()">Contact</a>

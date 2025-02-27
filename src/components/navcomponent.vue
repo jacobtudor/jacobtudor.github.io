@@ -1,6 +1,8 @@
 <template>
     <nav>
         <span class="vl"></span>
+        <a href="articles">Articles</a>
+        <div class="shadow"></div>
         <a href="projects">Projects</a>
         <div class="shadow"></div>
         <a href="about">About me</a>
