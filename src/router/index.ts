@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ArticlesView from '../views/ArticlesView.vue'
 import ArticleView from '../views/ArticleView.vue'
+import NotFound from '../views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,30 +13,35 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/articles',
-      name: 'articles',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ArticlesView.vue')
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ArticlesView.vue')
-    },
-    {
-      path: '/article/:id',
-      name: 'article',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ArticleView.vue'),
-      props: true
-    },
+      path: '*',
+      name: 'notfound',
+      component: NotFound
+    }
+    // {
+    //   path: '/articles',
+    //   name: 'articles',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/ArticlesView.vue')
+    // },
+    // {
+    //   path: '/projects',
+    //   name: 'projects',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/ArticlesView.vue')
+    // },
+    // {
+    //   path: '/article/:id',
+    //   name: 'article',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/ArticleView.vue'),
+    //   props: true
+    // },
   ],
 })
 

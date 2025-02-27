@@ -36,10 +36,10 @@ provide<() => void>('toggleMenu', toggleMenu)
         </div>
         <nav>
             <span class="vl"></span>
-            <router-link to="/Articles">Articles</router-link>
+            <!-- <router-link to="/Articles">Articles</router-link>
             <div class="shadow"></div>
             <router-link to="/Projects">Projects</router-link>
-            <div class="shadow"></div>
+            <div class="shadow"></div> -->
             <a href="/#about-me">About me</a>
             <div class="shadow"></div>
             <a href="mailto:jacob_tudor@outlook.com">Contact</a>
