@@ -1,6 +1,6 @@
 # site
-
-This template should help get you started developing with Vue 3 in Vite.
+https://jacobtudor.github.io/
+This project was developed using Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
